@@ -6,7 +6,7 @@ import TranscriptionView from "@/components/TranscriptionView";
 import PersonalitySelector from "@/components/PersonalitySelector";
 import EvaluationDisplay from "@/components/EvaluationDisplay";
 import { type Personality } from "@/lib/personalities";
-import useCombinedTranscriptions from "@/hooks/useCombinedTranscriptions";
+
 import {
   BarVisualizer,
   DisconnectButton,
@@ -20,7 +20,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Room, RoomEvent } from "livekit-client";
 import { useCallback, useEffect, useState } from "react";
 import * as React from "react";
-import type { ConnectionDetails } from "./api/connection-details/route";
 import type { PersonalityConnectionDetails } from "./api/personality-connection/route";
 
 type AppState = "selecting" | "connecting" | "connected" | "evaluating";

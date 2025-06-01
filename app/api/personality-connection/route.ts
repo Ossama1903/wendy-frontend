@@ -1,4 +1,4 @@
-import { PERSONALITIES, EVALUATOR_PERSONALITY } from "@/lib/personalities";
+import { PERSONALITIES } from "@/lib/personalities";
 import { AccessToken, AccessTokenOptions, VideoGrant } from "livekit-server-sdk";
 import { NextRequest, NextResponse } from "next/server";
 

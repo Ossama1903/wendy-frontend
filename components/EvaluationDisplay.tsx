@@ -17,7 +17,7 @@ export default function EvaluationDisplay({
   const [displayedText, setDisplayedText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [speechUtterance, setSpeechUtterance] = useState<SpeechSynthesisUtterance | null>(null);
+  const [, setSpeechUtterance] = useState<SpeechSynthesisUtterance | null>(null);
 
   const playEvaluation = () => {
     if ('speechSynthesis' in window) {
@@ -105,7 +105,7 @@ export default function EvaluationDisplay({
     >
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-white mb-2">Performance Evaluation</h2>
-        <p className="text-gray-300">Here's your feedback from Wendy Rhoades</p>
+        <p className="text-gray-300">Here&apos;s your feedback from Wendy Rhoades</p>
       </div>
 
       <div className="bg-gray-800/50 border border-gray-600 rounded-lg p-6 mb-8">

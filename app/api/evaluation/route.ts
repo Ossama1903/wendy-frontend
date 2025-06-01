@@ -1,4 +1,3 @@
-import { EVALUATOR_PERSONALITY } from "@/lib/personalities";
 import { NextRequest, NextResponse } from "next/server";
 
 export const revalidate = 0;
@@ -6,7 +5,7 @@ export const revalidate = 0;
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { conversationTranscript, personalityUsed } = body;
+    const { personalityUsed } = body;
 
     if (!personalityUsed) {
       return new NextResponse("Personality is required", { status: 400 });
